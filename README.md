@@ -1,70 +1,44 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# codesRus - Visionary Productions - SEI-Project 3 - CO Healthy Homemade
 
-## Available Scripts
+## Product Description:
 
-In the project directory, you can run:
+### Colorado Healthy Homemade is a personal chef service based out of Denver. Their service provides the client with a chef who goes to their home, prepares a menu, shops for the food, and prepares and portions the meals for the week. At the moment, the chef leaves a paper write-up of the weeks meals supplemented with photos delivered by text. The client has requested that we produce a product that allows the chef to view the client, provide the weekly menu via a calendar, and upload photos for reference. The client will be able to login and view the menu (or previous menus) by week, view the photos, and leave feedback (likes, dietary restrictions, allergies). Any correspondence between chef and client would trigger an email notification.
 
-### `npm start`
+## User Story:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### As a Client, I want to be able to visit a website that details the chef and services provided. Create an account to request a consultation. Once services begin, I will be able to view menu plans by week, review reference photos, and provide feedback directly to the chef. As a chef, I will be able to upload the weeks menu and reference photos by client and week. Also, receive feedback from the client about previous menu, menu items, dietary restrictions, portions, and allergies.  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Wireframes:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+![Home Page](https://user-images.githubusercontent.com/100719674/190689991-ef10bdea-b967-4251-850d-03789b8b2938.png)
+### Our homepage will present a header with photos and logo, a navbar for quick navigation, and a login. New or potential clients will be redirected to the Create Account form.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![AfterLoginCalendar](https://user-images.githubusercontent.com/100719674/190690875-3c54b718-6d4d-4c52-afd5-5447d0c0151a.png)
+### After Login, the client and chef will interface with a calendar. This depends heavily on the API we select. We want the Chef to be able to proceed by client and update a client-specific calendar. The client will be able to navigate by week to view specific menus
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Nonclient Consult](https://user-images.githubusercontent.com/100719674/190691422-78868c99-4ef9-49b3-a13d-354389c9158c.png)
+### Potential clients will be able to submit info and request a consultation using a form.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Chef Form](https://user-images.githubusercontent.com/100719674/190691580-4c40cca7-5c78-45ac-a78e-761f5a2e174a.png)
+### The chef form will provide the weekly menu and allow reference photos to be uploaded.
 
-### `npm run eject`
+![Client Form](https://user-images.githubusercontent.com/100719674/190691755-7ccbf2a5-28bd-4081-a68a-6f8340151f88.png)
+### The client form will provide the weekly menu, reference photos, and a place. to leave feedback for the chef.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## API:
+json.googleapis.com
+https://developers.google.com/calendar/api/v3/reference?hl=en_US
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Component Hierarchy:
 
-## Learn More
+### https://miro.com/app/board/uXjVPXWQn0Y=/
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
