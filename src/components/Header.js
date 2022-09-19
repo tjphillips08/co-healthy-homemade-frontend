@@ -1,5 +1,11 @@
 const Header = (props) => {
-    return <h1>Header: Test</h1>
+    return (
+        <header>
+            <img src="https://i.imgur.com/LHktv70.jpg" alt="food"/>
+        </header>
+
+    
+    )
   }
   
   export default Header
