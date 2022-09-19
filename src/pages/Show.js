@@ -86,7 +86,7 @@ const Show = (props) => {
             const deletedMeal = await response.json()
             // our destroy - findByIdAndDelete >> original document
             console.log(deletedMeal)
-            navigate('/')
+            navigate('/food')
         } catch (err) {
             console.log(err)
             navigate('https://co-healthy-homemade.herokuapp.com/food/' + id)
@@ -123,7 +123,7 @@ const Show = (props) => {
         {meals ? loaded() : loading()}
 
         <div className="button-wrapper">
-            <Link to="/">Back Home</Link>
+            <Link to="/food"></Link>
             <button 
             onClick={removeMeal}
             >
