@@ -5,9 +5,8 @@ import { useState, useEffect } from 'react'
 const BASE_URL = 'https://co-healthy-homemade.herokuapp.com/'
 
 
-const Spacer = ({ height = "80px", bar = true }) => {
-    return (<div className="spacer" style={{ height: height }}>{bar ? <div className="divider"></div> : null}</div>)
-}
+
+
 const Show = (props) => {
     const [editForm, setEditForm] = useState(null)
     const [meals, setMeals] = useState(null)

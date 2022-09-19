@@ -5,7 +5,7 @@ import Show from "../pages/Show"
 const Main = (props) => {
     return (
       <main>
-    <h1>Main: Test</h1>
+    
     <Routes>
       <Route path='/food' element={<Meals/>}></Route>
       <Route path='/food/:id' element={<Show/>}></Route>
