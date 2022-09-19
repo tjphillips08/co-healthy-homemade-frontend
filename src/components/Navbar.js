@@ -2,17 +2,22 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './Navbar.css'
+
 
 const Navigation = (props) => {
     return (
-        <Navbar bg="light" expand="lg">
+        <Navbar bg="light" expand="lg" className='py-5'>
         <Container>
           <Navbar.Brand href="#home">
             <img src="https://i.imgur.com/88AlrS5.jpg" 
+            className='logo'
             alt="" 
-            height="50" 
-            width="50"
-            className="d-inline-block align-top"
+            height="90" 
+            width="90"
+            
+            
             />
             </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
