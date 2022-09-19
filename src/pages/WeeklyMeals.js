@@ -96,7 +96,7 @@ return(
             </label>
             <label>
                 <span>Image</span>
-                <input type="text" required name= "image" placeholder="Enter meal image" onChange={handleChange} value={newForm.image}></input>
+                <input type="file" required name= "image" placeholder="Enter meal image" onChange={handleChange} value={newForm.image}></input>
             </label>
             <label>
                 <span>Type</span>
