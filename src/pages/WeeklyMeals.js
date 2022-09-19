@@ -51,6 +51,7 @@ const handleSubmit =async (e) =>{
         console.log(URL)
         const response= await fetch(URL, options)
         const responseData = await response.json()
+        console.log(responseData)
 
         getMeals(setMeals)
         setNewForm(initForm)
@@ -66,7 +67,7 @@ const handleChange = (e) =>{
 }
 
 const loaded = () =>{
-    return food?.map((meal)=>{
+    return meals?.map((meal)=>{
         return(
             <div key={meal._id} className="meal-card">
                 <Link to={`/food/${meal._id}`}>
@@ -110,7 +111,7 @@ return(
         </form>
     </section>
     <section className ="meal-list">
-        {food && food.length ? loaded() : loading()}
+        {meals && meals.length ? loaded() : loading()}
     </section>
     
     </>
