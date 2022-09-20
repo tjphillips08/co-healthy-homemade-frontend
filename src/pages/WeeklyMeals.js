@@ -78,11 +78,11 @@ const loaded = () =>{
         return(
             <div key={meal._id} className="meal-card">
                 <Link to={`/food/${meal._id}`}>
-                <h1>{meal.name}</h1>
-                <img src={meal.image} alt={meal.type}></img>
-                <h2>{meal.type}</h2>
-                <h3>{meal.cuisine}</h3>
-                </Link>
+                <h1>{meal.name}</h1></Link>
+                <img src={meal.image} alt={meal.name}></img>
+                <h2>{meal.portions}</h2>
+                <h3>{meal.created}</h3>
+                
             </div>
         )
     })
