@@ -1,7 +1,11 @@
 import EditForm from '../components/EditForm'
-
+import Card from 'react-bootstrap/Card';
+import ListGroup from 'react-bootstrap/ListGroup';
+import Button from 'react-bootstrap/Button';
 import { useParams, Link, useNavigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
+import '../components/Navbar.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 const BASE_URL = 'https://co-healthy-homemade.herokuapp.com/'
 
 
@@ -30,17 +34,22 @@ const Show = (props) => {
     }
     const loaded = () => {
         return (
-            <div className="meals">
-                {/* <Spacer /> */}
-                {/* spacers allow uniform space between sections / subsections of your ui -  */}
-                <h1>Show Page</h1>
-                <h2>{meals.name}</h2>
-                <img src={meals.image} alt={meals.name + " image"} />
-                <h2>{meals.desc}</h2>
-                <h2>Portions: {meals.portions}</h2>
-                <h2>{meals.day}</h2>
-                <h2>Made On: {meals.created}</h2>
-            </div>
+        <Card style={{ width: '38rem' }} className="card">
+            <Card.Img variant="top" src={meals.image} alt={meals.name + " image"} />
+            <Card.Body>
+            <Card.Title>{meals.name}</Card.Title>
+            <Card.Text>{meals.desc}</Card.Text>
+            </Card.Body>
+            <ListGroup className="list-group-flush">
+            <ListGroup.Item>Portions: {meals.portions}</ListGroup.Item>
+            <ListGroup.Item>{meals.day}</ListGroup.Item>
+            <ListGroup.Item>Made On: {meals.created}</ListGroup.Item>
+            </ListGroup>
+            <Card.Body>
+            <Button variant="primary" onClick={removeMeal}>Delete</Button>
+       
+      </Card.Body>
+    </Card>
         )
     }
 
@@ -124,14 +133,7 @@ const Show = (props) => {
 
         {meals ? loaded() : loading()}
 
-        <div className="button-wrapper">
-            <Link to="/food"></Link>
-            <button 
-            onClick={removeMeal}
-            >
-                Delete Meal
-            </button>
-        </div>
+       
     </section>
 }
 
