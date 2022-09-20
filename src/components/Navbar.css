@@ -8,13 +8,16 @@
     
 }
 
+.me-auto{
+   word-spacing: 30px;
+}
 
 
-
-/* .show-card {
-   display: flex;
-   justify-content: center;
-} */
+#basic-navbar-nav {
+    font-size:x-large;
+    padding-left: 30px;
+    
+}
 
 #custom-class {
     display: flex;
