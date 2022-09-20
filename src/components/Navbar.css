@@ -23,3 +23,11 @@
    display: flex;
    justify-content: center;
 }
+
+.custom-class {
+    display: flex;
+    width: 50%;
+    margin: auto;
+}
+
+

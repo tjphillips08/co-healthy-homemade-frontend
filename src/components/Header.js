@@ -1,7 +1,9 @@
 import Carousel from 'react-bootstrap/Carousel';
+import '../components/Navbar.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 const Header = (props) => {
     return (
-        <Carousel >
+        <Carousel class="custom-class">
       <Carousel.Item>
         <img
           className="d-block w-100"
