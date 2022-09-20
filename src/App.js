@@ -10,7 +10,7 @@ function App() {
       <Header/>
       <Navigation/>
       <Main/>
-     <h2>CO Healthy Homemade</h2>
+     
     </div>
   );
 }
