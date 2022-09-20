@@ -35,10 +35,6 @@ const [meals, setMeals] = useState([])
 
 const [newForm, setNewForm] = useState(initForm)
 
-
-
-
-
 useEffect (()=>{
     getMeals(setMeals)
 }, [])
@@ -75,9 +71,7 @@ const handleSubmit =async (e) =>{
 const handleChange = (e) =>{
     const data = {...newForm, [e.target.name]: e.target.value}
     setNewForm(data)
-    
 }
-
 
 const loaded = () =>{
     return meals?.map((meal)=>{
@@ -85,11 +79,9 @@ const loaded = () =>{
             <div key={meal._id} className="meal-card">
                 <Link to={`/food/${meal._id}`}>
                 <h1>{meal.name}</h1></Link>
-
                 <img src={meal.image} alt={meal.name}></img>
-                <h2>{meal.portions}</h2>
-                <h3>{meal.created}</h3>
-
+                <h2>Portions: {meal.portions}</h2>
+                <h3>Made On: {meal.created}</h3>
                 
             </div>
         )
@@ -107,7 +99,7 @@ return(
 <h4>Create A New Meal</h4>
 <Form onSubmit={handleSubmit}>
 <Form.Group>
-<Form.Label className="text-center">Name:</Form.Label>
+<Form.Label>Name:</Form.Label>
 <Form.Control type="text" required name = "name" placeholder="Enter meal's name" onChange={handleChange} value={newForm.name} />
 </Form.Group>
 <Form.Group>
