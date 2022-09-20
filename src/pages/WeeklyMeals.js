@@ -7,6 +7,9 @@ import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+import '../components/Navbar.css'
 
 const BASE_URL= 'https://co-healthy-homemade.herokuapp.com/'
 
@@ -78,24 +81,29 @@ const handleChange = (e) =>{
 const loaded = () =>{
     return meals?.map((meal)=>{
         return(
-        <Card style={{ width: '18rem' }}>
+        
+        <Row  sm={1} md={3} className="g-4">
+        <Col>
+    <Card style={{ width: '28rem' }} className="card">
         <Card.Img variant="top" src={meal.image} alt={meal.name} />
-       <Card.Body>
+        <Card.Body>
         <Card.Title>{meal.name}</Card.Title>
         <Card.Text>
         {meal.desc}
         </Card.Text>
-      </Card.Body>
-      <ListGroup className="list-group-flush">
+        </Card.Body>
+        <ListGroup className="list-group-flush">
         <ListGroup.Item>Made On: {meal.created}</ListGroup.Item>
         <ListGroup.Item>Portions: {meal.portions}</ListGroup.Item>
-        <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
-      </ListGroup>
+        </ListGroup>
       <Card.Body>
         <Card.Link href={`/food/${meal._id}`}>Detail</Card.Link>
-        <Card.Link href="#">Another Link</Card.Link>
+       
       </Card.Body>
     </Card>
+        </Col> 
+        </Row>
+       
         )
     })
 }
@@ -107,7 +115,7 @@ const loading = ()=>{
 return(
     <div style={{ display: 'block', 
     width: 700, 
-    padding: 30 }}>
+    padding: 30 }} className="form">
 <h4>Create A New Meal</h4>
 <Form onSubmit={handleSubmit}>
 <Form.Group>
