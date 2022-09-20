@@ -28,6 +28,10 @@ const [meals, setMeals] = useState([])
 
 const [newForm, setNewForm] = useState(initForm)
 
+
+
+
+
 useEffect (()=>{
     getMeals(setMeals)
 }, [])
@@ -64,18 +68,20 @@ const handleSubmit =async (e) =>{
 const handleChange = (e) =>{
     const data = {...newForm, [e.target.name]: e.target.value}
     setNewForm(data)
+    
 }
+
 
 const loaded = () =>{
     return meals?.map((meal)=>{
         return(
             <div key={meal._id} className="meal-card">
                 <Link to={`/food/${meal._id}`}>
-                <h1>{meal.name}</h1>
+                <h1>{meal.name}</h1></Link>
                 <img src={meal.image} alt={meal.type}></img>
                 <h2>{meal.type}</h2>
                 <h3>{meal.cuisine}</h3>
-                </Link>
+                
             </div>
         )
     })
@@ -96,7 +102,7 @@ return(
             </label>
             <label>
                 <span>Image</span>
-                <input type="file" required name= "image" placeholder="Enter meal image" onChange={handleChange} value={newForm.image}></input>
+                <input type="text" required name= "image" placeholder="Enter meal image" onChange={handleChange} value={newForm.image}></input>
             </label>
             <label>
                 <span>Type</span>
