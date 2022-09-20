@@ -84,7 +84,7 @@ const loaded = () =>{
         
         <Row  sm={1} md={3} className="g-4">
         <Col>
-    <Card style={{ width: '28rem' }} className="card">
+    <Card style={{ width: '28rem' }} className="grid">
         <Card.Img variant="top" src={meal.image} alt={meal.name} />
         <Card.Body>
         <Card.Title>{meal.name}</Card.Title>
