@@ -5,6 +5,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Card from 'react-bootstrap/Card';
+import ListGroup from 'react-bootstrap/ListGroup';
 
 const BASE_URL= 'https://co-healthy-homemade.herokuapp.com/'
 
@@ -76,14 +78,24 @@ const handleChange = (e) =>{
 const loaded = () =>{
     return meals?.map((meal)=>{
         return(
-            <div key={meal._id} className="meal-card">
-                <Link to={`/food/${meal._id}`}>
-                <h1>{meal.name}</h1></Link>
-                <img src={meal.image} alt={meal.name}></img>
-                <h2>Portions: {meal.portions}</h2>
-                <h3>Made On: {meal.created}</h3>
-                
-            </div>
+        <Card style={{ width: '18rem' }}>
+        <Card.Img variant="top" src={meal.image} alt={meal.name} />
+       <Card.Body>
+        <Card.Title>{meal.name}</Card.Title>
+        <Card.Text>
+        {meal.desc}
+        </Card.Text>
+      </Card.Body>
+      <ListGroup className="list-group-flush">
+        <ListGroup.Item>Made On: {meal.created}</ListGroup.Item>
+        <ListGroup.Item>Portions: {meal.portions}</ListGroup.Item>
+        <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
+      </ListGroup>
+      <Card.Body>
+        <Card.Link href={`/food/${meal._id}`}>Detail</Card.Link>
+        <Card.Link href="#">Another Link</Card.Link>
+      </Card.Body>
+    </Card>
         )
     })
 }
