@@ -8,26 +8,60 @@
     
 }
 
-
-.form {
-    margin-left: 500px;
+.me-auto{
+   word-spacing: 30px;
 }
 
-.card{
-    margin-left: 170px;
-    margin-right: auto;
-    margin-top: 40px;
+
+#basic-navbar-nav {
+    font-size:x-large;
+    padding-left: 30px;
+    
 }
 
-.show-card {
-   display: flex;
-   justify-content: center;
-}
-
-.custom-class {
+#custom-class {
     display: flex;
     width: 50%;
     margin: auto;
+    object-fit: cover;
+    
+    
 }
 
+#carousel-container {
+    background-color: green;
+    text-shadow: 3px;
+    
+
+    
+
+
+}
+
+#meals {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#show-card {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
 

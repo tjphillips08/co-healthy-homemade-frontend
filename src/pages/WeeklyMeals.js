@@ -82,8 +82,8 @@ const handleChange = (e) =>{
 const loaded = () =>{
     return meals?.map((meal)=>{
         return(
-        <Container>
-        <Row  className="g-4">
+        <Container id="meals">
+        <Row  className="g-4 shadow-lg">
         <Col>
     <Card style={{ width: '28rem' }} className="grid">
         <Card.Img variant="top" src={meal.image} alt={meal.name} />
@@ -98,7 +98,7 @@ const loaded = () =>{
         <ListGroup.Item>Portions: {meal.portions}</ListGroup.Item>
         </ListGroup>
       <Card.Body>
-        <Card.Link href={`/food/${meal._id}`}>Detail</Card.Link>
+        <Card.Link href={`/food/${meal._id}`}>Details</Card.Link>
        
       </Card.Body>
     </Card>
@@ -117,7 +117,7 @@ const loading = ()=>{
 return(
     <div style={{ display: 'block', 
     width: 700, 
-    padding: 30 }} className="form">
+    padding: 30 }} id="form" className="form shadow-lg">
 <h4>Create A New Meal</h4>
 <Form onSubmit={handleSubmit}>
 <Form.Group>

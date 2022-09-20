@@ -12,7 +12,7 @@ const Navigation = (props) => {
         <Container>
           <Navbar.Brand href="#home">
             <img src="https://i.imgur.com/88AlrS5.jpg" 
-            className='logo'
+            className='logo shadow-lg'
             alt="" 
             height="90" 
             width="90"
