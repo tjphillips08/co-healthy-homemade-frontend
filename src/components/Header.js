@@ -1,9 +1,11 @@
 import Carousel from 'react-bootstrap/Carousel';
 import '../components/Navbar.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Container from 'react-bootstrap/Container';
 const Header = (props) => {
     return (
-        <Carousel class="custom-class">
+      <Container id="carousel-container" className='shadow-lg'>
+        <Carousel id="custom-class"class="custom-class">
       <Carousel.Item>
         <img
           className="d-block w-100"
@@ -84,6 +86,7 @@ const Header = (props) => {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
+    </Container>
 
     
     )
