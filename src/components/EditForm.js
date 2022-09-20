@@ -10,12 +10,12 @@ const EditForm = ({handleSubmit, handleChange, mealData, val}) => {
                         <input type="text" required name="image" placeholder="Enter meal's image" onChange={handleChange} value={mealData.image} />
                     </label>
                     <label>
-                        <span>Type</span>
-                        <input type="text" required name="type" placeholder="Enter meal's type" onChange={handleChange} value={mealData.type} />
+                        <span>Portion</span>
+                        <input type="text" required name="portions" placeholder="Edit Meal Portion" onChange={handleChange} value={mealData.portions} />
                     </label>
                     <label>
-                        <span>Cuisine</span>
-                        <input type="text" required name="cuisine" placeholder="Enter meals's cuisine" onChange={handleChange} value={mealData.cuisine} />
+                        <span>Day</span>
+                        <input type="text" required name="day" placeholder="Enter Day" onChange={handleChange} value={mealData.day} />
                     </label>
                     <input type="submit" value={val}/>
                 </form>

@@ -18,3 +18,8 @@
     margin-right: auto;
     margin-top: 40px;
 }
+
+.show-card {
+   display: flex;
+   justify-content: center;
+}
