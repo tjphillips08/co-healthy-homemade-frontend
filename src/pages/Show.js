@@ -34,7 +34,7 @@ const Show = (props) => {
     }
     const loaded = () => {
         return (
-        <Card style={{ width: '38rem' }} className="card">
+        <Card style={{ width: '38rem', marginLeft:'700px' }} className="show-card">
             <Card.Img variant="top" src={meals.image} alt={meals.name + " image"} />
             <Card.Body>
             <Card.Title>{meals.name}</Card.Title>
