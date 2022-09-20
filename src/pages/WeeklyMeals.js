@@ -99,7 +99,7 @@ return(
 <h4>Create A New Meal</h4>
 <Form onSubmit={handleSubmit}>
 <Form.Group>
-<Form.Label>Name:</Form.Label>
+<Form.Label className="text-center">Name:</Form.Label>
 <Form.Control type="text" required name = "name" placeholder="Enter meal's name" onChange={handleChange} value={newForm.name} />
 </Form.Group>
 <Form.Group>
