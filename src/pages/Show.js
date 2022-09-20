@@ -36,8 +36,10 @@ const Show = (props) => {
                 <h1>Show Page</h1>
                 <h2>{meals.name}</h2>
                 <img src={meals.image} alt={meals.name + " image"} />
-                <h2>{meals.type}</h2>
-                <h2>{meals.cuisine}</h2>
+                <h2>{meals.desc}</h2>
+                <h2>Portions: {meals.portions}</h2>
+                <h2>{meals.day}</h2>
+                <h2>Made On: {meals.created}</h2>
             </div>
         )
     }
