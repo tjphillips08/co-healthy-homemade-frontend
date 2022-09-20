@@ -10,6 +10,7 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import '../components/Navbar.css'
+import Container from 'react-bootstrap/esm/Container';
 
 const BASE_URL= 'https://co-healthy-homemade.herokuapp.com/'
 
@@ -81,8 +82,8 @@ const handleChange = (e) =>{
 const loaded = () =>{
     return meals?.map((meal)=>{
         return(
-        
-        <Row  sm={1} md={3} className="g-4">
+        <Container>
+        <Row  className="g-4">
         <Col>
     <Card style={{ width: '28rem' }} className="grid">
         <Card.Img variant="top" src={meal.image} alt={meal.name} />
@@ -103,6 +104,7 @@ const loaded = () =>{
     </Card>
         </Col> 
         </Row>
+        </Container>
        
         )
     })
