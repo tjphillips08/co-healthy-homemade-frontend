@@ -14,7 +14,7 @@ const Home = () =>{
         <h1 id="home">Client</h1>
         <a href="/login" id="home-icon"><img src="https://i.imgur.com/SQJo1pp.png" alt="client" id="home-image"/></a>
 
-        <hr></hr>
+       
 
 
         <h1 id="home">Chef</h1>

@@ -50,6 +50,10 @@ h2 {
     margin-top: 20px;
 }
 
+#chef-name {
+    padding-top: 20px;
+}
+
 hr {
     color: green;
 }
@@ -65,8 +69,23 @@ hr {
 
 #home {
     padding-top: 30px;
+    
+    
+    
 }
-#home-icon {
+#home-container {
+    padding-bottom: 100px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
    
+
+   
+
+}
+
+#home-image:hover {
+    box-shadow: 5px 5px 5px rgb(163, 46, 31);
+
 
 }
