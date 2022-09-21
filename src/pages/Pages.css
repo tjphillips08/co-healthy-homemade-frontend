@@ -1,0 +1,109 @@
+p {
+    text-indent: 3ch;
+    text-align: left;
+    word-wrap: break-word;
+    padding-left: 10px;
+    padding-right: 10px;
+    font: 2em sans-serif;
+    margin-top: 20px;
+}
+
+#services {
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+h1 {
+    font-family:fantasy;
+    font-weight: bolder;
+    font-size:xx-large;
+}
+
+h2 {
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+#rate {
+    font-weight: bold;
+    padding-bottom: 2em;
+}
+
+
+.chef-pic {
+    height: 300px;
+    width: 300px;
+    border: 1px solid green;
+    box-shadow: 5px 5px 5px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#chef-info {
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-bottom: 40px;
+    text-indent: 3ch;
+    text-align: left;
+    word-wrap: break-word;
+    font: 2em sans-serif;
+    margin-top: 20px;
+}
+
+#chef-name {
+    padding-top: 20px;
+}
+
+hr {
+    color: green;
+}
+
+#home-image {
+    height: 300px;
+    width: 300px;
+    border: 1px solid green;
+    box-shadow: 5px 5px 5px green;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#home {
+    padding-top: 30px;
+    
+    
+    
+}
+#home-container {
+    padding-bottom: 100px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+   
+
+   
+
+}
+
+#home-image:hover {
+    box-shadow: 5px 5px 5px rgb(163, 46, 31);
+
+
+}
+
+#contact-us {
+    padding-bottom: 100px;
+    border: 10px solid green;
+    border-radius: 5%;
+}
+
+#contact-text {
+    padding-top: 90px;
+    
+}
+
+#additional{
+    color: green;
+}
+#additional:hover{
+    color: rgb(163, 46, 31);
+}
