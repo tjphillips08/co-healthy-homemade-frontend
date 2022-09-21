@@ -5,6 +5,8 @@ import Contact from "../pages/Contact"
 import Services from "../pages/Services"
 import About from "../pages/About"
 import Home from "../pages/Home"
+import Login from "../pages/Login"
+import Register from "../pages/Register"
 
 const Main = (props) => {
     return (
@@ -17,6 +19,8 @@ const Main = (props) => {
       <Route path='/services' element={<Services/>}></Route>
       <Route path='/about' element={<About/>}></Route>
       <Route path='/home' element={<Home/>}></Route>
+      <Route path='/login' element={<Login/>}></Route>
+      <Route path='/register' element={<Register/>}></Route>
     </Routes>
     </main>
     
