@@ -1,6 +1,14 @@
 import {React} from 'react'
+import { useParams, Link, useNavigate } from 'react-router-dom'
+import './Pages.css'
+
+
+const BASE_URL = 'https://co-healthy-homemade.herokuapp.com/'
 
 const About = () =>{
+    const navigate = useNavigate()
+    const URL = BASE_URL+'about'
+
     return(
     <div>
         <img src="https://i.imgur.com/tde9GdW.jpg" alt="Chef Jonelle" class="chef-pic"/>
