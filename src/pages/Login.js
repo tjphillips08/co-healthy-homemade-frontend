@@ -1,5 +1,5 @@
 import {React} from 'react'
-import {  useNavigate } from 'react-router-dom'
+import {  Link,useNavigate } from 'react-router-dom'
 import './Pages.css'
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
@@ -30,6 +30,7 @@ const Login = () =>{
         <Button variant="primary" type="submit">
           Submit
         </Button>
+        <Link href="Base_URL+'register">Register</Link>
       </Form>
     )
 }
