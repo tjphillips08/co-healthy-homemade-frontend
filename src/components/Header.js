@@ -67,7 +67,7 @@ const Header = (props) => {
         <Carousel.Caption>
           <h3>Texas Brisket Tacos</h3>
           <p>
-            Pulled brisket tacos w/ refined beans, onion, avocado, cilantro, lime and homemade tortillas.
+            Pulled brisket tacos w/ refried beans, onion, avocado, cilantro, lime and homemade tortillas.
           </p>
         </Carousel.Caption>
       </Carousel.Item>
