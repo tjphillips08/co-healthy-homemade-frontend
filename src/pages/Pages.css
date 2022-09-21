@@ -89,3 +89,21 @@ hr {
 
 
 }
+
+#contact-us {
+    padding-bottom: 100px;
+    border: 10px solid green;
+    border-radius: 5%;
+}
+
+#contact-text {
+    padding-top: 90px;
+    
+}
+
+#additional{
+    color: green;
+}
+#additional:hover{
+    color: rgb(163, 46, 31);
+}
