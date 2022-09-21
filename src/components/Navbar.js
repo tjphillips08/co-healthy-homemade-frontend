@@ -14,7 +14,7 @@ const Navigation = (props) => {
     return (
         <Navbar bg="light" expand="lg" className='py-5'>
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="home">
             <img src="https://i.imgur.com/88AlrS5.jpg" 
             className='logo shadow-lg'
             alt="" 
