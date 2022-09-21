@@ -53,3 +53,20 @@ h2 {
 hr {
     color: green;
 }
+
+#home-image {
+    height: 300px;
+    width: 300px;
+    border: 1px solid green;
+    box-shadow: 5px 5px 5px green;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#home {
+    padding-top: 30px;
+}
+#home-icon {
+   
+
+}
