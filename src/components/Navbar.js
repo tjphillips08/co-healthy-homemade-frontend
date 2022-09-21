@@ -2,6 +2,10 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { SocialIcon } from 'react-social-icons';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Navbar.css'
 
@@ -31,12 +35,11 @@ const Navigation = (props) => {
                 <NavDropdown.Item href="/services">Services</NavDropdown.Item>
                 <NavDropdown.Item href="/food">Menu</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/contact">
-                  Contact
-                </NavDropdown.Item>
+                <NavDropdown.Item href="/contact">Contact</NavDropdown.Item>
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>
+          <SocialIcon url="https://www.instagram.com/cohealthyhomemade/?hl=en" target="_blank"/>
         </Container>
       </Navbar>
 
