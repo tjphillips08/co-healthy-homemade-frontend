@@ -14,7 +14,7 @@ const Login = () =>{
     const URL = BASE_URL+'login'
     
     return(
-        <Form id="login-form">
+        <Form id="login-form" className="g-4 shadow-lg">
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
           <Form.Control type="email" placeholder="Enter email" />

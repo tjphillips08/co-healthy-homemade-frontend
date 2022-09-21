@@ -14,7 +14,7 @@ const Register = () =>{
     const URL = BASE_URL+'register'
     
     return(
-        <Form id="register-form">
+        <Form id="register-form" className="g-4 shadow-lg">
         <Form.Group className="mb-3" controlId="formBasicName">
           <Form.Label>Name</Form.Label>
           <Form.Control type="name" placeholder="Name" />
