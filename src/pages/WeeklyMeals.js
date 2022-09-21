@@ -11,9 +11,12 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import '../components/Navbar.css'
 import Container from 'react-bootstrap/esm/Container';
+import FileUploader from './FileUploader';
+import Test from '../pages/Test'
+
+
 
 const BASE_URL= 'https://co-healthy-homemade.herokuapp.com/'
-
 
 const getMeals = async (fn) =>{
     try{
@@ -28,19 +31,21 @@ const getMeals = async (fn) =>{
 
 const Meals = (props) =>{
     const initForm ={
-       name: "",
-       image: "",
-       desc: "",
-       day: "" ,
-       portions: "number",
-       created: "date" ,
+        name: "",
+        image: "",
+        desc: "",
+        day: "" ,
+        portions: "number",
+        created: "date" ,
     }
-
-
-const [meals, setMeals] = useState([])
-
-const [newForm, setNewForm] = useState(initForm)
-
+    
+    
+    const [meals, setMeals] = useState([])
+    const [selectedFile, setSelectedFile] = useState(null);
+    
+    const [newForm, setNewForm] = useState(initForm)
+    
+    
 useEffect (()=>{
     getMeals(setMeals)
 }, [])
@@ -48,7 +53,9 @@ useEffect (()=>{
 
 const handleSubmit =async (e) =>{
     e.preventDefault()
+   
     try{
+        
         const newMeal = {...newForm}
         const testingOutput = JSON.stringify(newMeal)
 
@@ -78,6 +85,7 @@ const handleChange = (e) =>{
     const data = {...newForm, [e.target.name]: e.target.value}
     setNewForm(data)
 }
+
 
 const loaded = () =>{
     return meals?.map((meal)=>{
@@ -113,11 +121,14 @@ const loaded = () =>{
 const loading = ()=>{
     <h1>Loading...</h1>
 }
+const [imageURL, setImageURL] = useState("")
 
 return(
+    
     <div style={{ display: 'block', 
     width: 700, 
     padding: 30 }} id="form" className="form shadow-lg">
+    <Test setImageURL = {setImageURL}/>
 <h4>Create A New Meal</h4>
 <Form onSubmit={handleSubmit}>
 <Form.Group>
@@ -126,7 +137,7 @@ return(
 </Form.Group>
 <Form.Group>
 <Form.Label>Image:</Form.Label>
-<Form.Control type="text" required name= "image" placeholder="Enter meal image" onChange={handleChange} value={newForm.image} />
+<Form.Control  type="text" required name= "image" placeholder="Enter meal image"  onChange={handleChange} value={imageURL}/>
 </Form.Group>
 <Form.Group>
 <Form.Label>Description:</Form.Label>
