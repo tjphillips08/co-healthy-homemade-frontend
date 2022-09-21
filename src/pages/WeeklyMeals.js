@@ -55,8 +55,9 @@ const handleSubmit =async (e) =>{
     e.preventDefault()
    
     try{
-        
-        const newMeal = {...newForm}
+        console.log(newForm)
+        const newMeal = {...newForm} 
+       
         const testingOutput = JSON.stringify(newMeal)
 
         const options = {
@@ -89,6 +90,7 @@ const handleChange = (e) =>{
 
 const loaded = () =>{
     return meals?.map((meal)=>{
+        // console.log(meal)
         return(
         <Container id="meals">
         <Row  className="g-4 shadow-lg">
@@ -129,6 +131,7 @@ return(
     width: 700, 
     padding: 30 }} id="form" className="form shadow-lg">
     <Test setImageURL = {setImageURL}/>
+    
 <h4>Create A New Meal</h4>
 <Form onSubmit={handleSubmit}>
 <Form.Group>
