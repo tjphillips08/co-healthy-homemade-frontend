@@ -4,4 +4,27 @@ p {
     word-wrap: break-word;
     padding-left: 10px;
     padding-right: 10px;
+    font: 2em sans-serif;
+    margin-top: 20px;
+}
+
+#services {
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+h1 {
+    font-family:fantasy;
+    font-weight: bolder;
+    font-size:xx-large;
+}
+
+h2 {
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+h3 {
+    font-weight: bold;
+    padding-bottom: 2em;
 }
