@@ -12,6 +12,7 @@ export const Email = () => {
 
   const handleChange = (evt) => {
     setnewEmail({...newEmail,[evt.target.name]: evt.target.value,})
+    
   }
   
   const form = useRef();
