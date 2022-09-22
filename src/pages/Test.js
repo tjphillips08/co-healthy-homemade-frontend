@@ -7,14 +7,14 @@ const TestUpload = (props) =>{
     const [file, setFile] = useState(null)
     const handleSubmit = async(e) =>{
         e.preventDefault();
-        console.log(file)
+        // console.log(file)
         try{
         const formData = new FormData();
         formData.append("upload_preset", "Meals-COHH");
         formData.append("file", file);
         // formData.append ("public_id", "")
         formData.append ("api_key", "862795625954768")
-        console.log(formData.getAll("file"))
+        // console.log(formData.getAll("file"))
         const response = await fetch(CLOUDINARY_URL, {
             method: "POST",
             body: formData,
@@ -29,7 +29,7 @@ const TestUpload = (props) =>{
         console.log(err)
     }
     } 
-    console.log("Test", file)
+    // console.log("Test", file)
     return(
         <div>
             <h1>Testing form</h1>
