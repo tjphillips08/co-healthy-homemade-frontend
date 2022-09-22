@@ -1,6 +1,10 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { useState } from 'react';
+import { Form } from 'react-router-dom';
+import { Button } from'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export const Email = () => {
   const SERVICE_ID = process.env.REACT_APP_SERVICE_ID
@@ -36,7 +40,7 @@ export const Email = () => {
 
   //
   return (
-    <div classname = "container">
+    <div className = "container">
     <form ref={form} onSubmit={sendEmail}>
       <label>Name</label>
       <input 
@@ -51,7 +55,7 @@ export const Email = () => {
       value={newEmail.user_email}
       onChange={handleChange}
       />
-    <label for="country">Service Needed</label>
+    <label htmlFor="country">Service Needed</label>
         <select id="country" name="country">
             <option value="meal-prep">Custom In-Home Weekly Meal Prep</option>
             <option value="party-services">Event and Party Services</option>
@@ -69,5 +73,8 @@ export const Email = () => {
       />
     </form>
     </div>
+
+
   );
 };
+
