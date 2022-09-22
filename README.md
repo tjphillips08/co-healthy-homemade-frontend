@@ -35,7 +35,7 @@
 ## API:
 ### https://cloudinary.com/
 ### Cloudinary was implemented to give our client the ability to upload photos from their tablet, computer, or mobile device and attach it directly the form.
-### Email API
+### https://www.emailjs.com/
 ### This was implemented to give the client and potential clients the ability to communicate directly with the Chef via the application.
 
 ## Component Hierarchy:
