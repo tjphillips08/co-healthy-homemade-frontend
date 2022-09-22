@@ -35,6 +35,7 @@
 
 
 <img width="1592" alt="Home" src="https://user-images.githubusercontent.com/100719674/191814864-6933d730-1a61-4156-aaf0-15a834e855a5.png">
+
 The home page greats the user with a carousel of images detailing the Chef's work. There are two icons for the Client or Chef to login
 
 
@@ -42,6 +43,7 @@ The home page greats the user with a carousel of images detailing the Chef's wor
 
 
 <img width="1551" alt="Login" src="https://user-images.githubusercontent.com/100719674/191815335-88d60556-b4a5-43cb-98a5-c92e54e041fe.png">
+
 The login form allows the Client or Chef to access the site using their credentials.
 
 
@@ -49,6 +51,7 @@ The login form allows the Client or Chef to access the site using their credenti
 
 
 <img width="1382" alt="Register" src="https://user-images.githubusercontent.com/100719674/191815521-284f5928-8675-4b36-b839-d8ff09d83736.png">
+
 If the client has not yet registered, they are redirected to the registration page.
 
 
@@ -56,6 +59,7 @@ If the client has not yet registered, they are redirected to the registration pa
 
 
 <img width="1223" alt="About Us" src="https://user-images.githubusercontent.com/100719674/191815813-5d06203b-a8df-4cc4-a9a7-74b7328a4bc0.png">
+
  The about us and services pages give the user information about the Chef and CO Healthy Homemade. Linking directly to the contact us page so they can correspond with the Chef directly.
 
 
@@ -63,6 +67,7 @@ If the client has not yet registered, they are redirected to the registration pa
 
 
 <img width="799" alt="Create a Meal" src="https://user-images.githubusercontent.com/100719674/191816384-13f0f8f8-70fb-46c8-9c22-7736f71bf069.png">
+
 The Chef can use this form to upload a photo from their device and provide the client with meal details, reference photos, made on date, and number of portions.
 
 
@@ -70,6 +75,7 @@ The Chef can use this form to upload a photo from their device and provide the c
 
 
 <img width="514" alt="Weekly" src="https://user-images.githubusercontent.com/100719674/191817018-0ecb0cb9-3984-427c-8290-a8b9b9dece0e.png">
+
 When the meal is created, it is displayed below the form. This allows the Chef to review and edit any meal.
 
 
