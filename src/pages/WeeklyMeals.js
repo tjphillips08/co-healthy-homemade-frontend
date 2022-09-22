@@ -16,7 +16,7 @@ import Test from '../pages/Test'
 
 
 
-const BASE_URL= 'https://co-healthy-homemade.herokuapp.com/'
+const BASE_URL= process.env.REACT_APP_BASE_URL
 
 const getMeals = async (fn) =>{
     try{
@@ -133,7 +133,7 @@ return(
     padding: 30 }} id="form" className="form shadow-lg">
     <Test setImageURL = {setImageURL}/>
     
-<h4>Create A New Meal</h4>
+
 <Form onSubmit={handleSubmit}>
   <Form.Group>
     <Form.Label>Name:</Form.Label>
