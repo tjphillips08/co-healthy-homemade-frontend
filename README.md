@@ -53,7 +53,7 @@
 ### https://www.linkedin.com/in/john-paul-haddad/
 
 ## Shout-outs:
-## This application was a team effort. We would like to thank the following developers for their selflessness and contributions. We coouldn't have done it without you! 
+## This application was a team effort. We would like to thank the following developers for their selflessness and contributions. We couldn't have done it without you! 
 ## David Robles 
 ## https://www.linkedin.com/in/david-robles-dr/
 
@@ -72,6 +72,7 @@
 ## Joshua Smith
 ## https://www.linkedin.com/in/jws-maker/
 
+## To the rest of our General Assembly cohort, we have found friendship and inspiration in each one of you. We are eternally grateful!!  
 
 
 
