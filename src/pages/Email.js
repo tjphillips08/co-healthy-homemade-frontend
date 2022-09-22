@@ -50,8 +50,9 @@ export const Email = () => {
             <option value="consultation">Consultation</option>
     </select>
       <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" 
+      <textarea name="message" 
+      />
+      <input type="text" 
       value="Send" />
     </form>
     </div>
