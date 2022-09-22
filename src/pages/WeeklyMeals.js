@@ -90,29 +90,26 @@ const handleChange = (e) =>{
 const loaded = () =>{
     return meals?.map((meal)=>{
         return(
-        <Container id="meals">
-        <Row  className="g-4 shadow-lg">
-        <Col>
-    <Card style={{ width: '28rem' }} className="grid">
-        <Card.Img variant="top" src={meal.image} alt={meal.name} />
-        <Card.Body>
-        <Card.Title>{meal.name}</Card.Title>
-        <Card.Text>
-        {meal.desc}
-        </Card.Text>
-        </Card.Body>
-        <ListGroup className="list-group-flush">
-        <ListGroup.Item>Made On: {meal.created}</ListGroup.Item>
-        <ListGroup.Item>Portions: {meal.portions}</ListGroup.Item>
-        </ListGroup>
-      <Card.Body>
-        <Card.Link href={`/food/${meal._id}`}>Details</Card.Link>
-       
-      </Card.Body>
-    </Card>
-        </Col> 
-        </Row>
-        </Container>
+          <Container id="meals">
+            <Row  className="g-4 shadow-lg">
+              <Col>
+                <Card style={{ width: '28rem' }} className="grid">
+                  <Card.Img variant="top" src={meal.image} alt={meal.name} />
+                    <Card.Body>
+                      <Card.Title>{meal.name}</Card.Title>
+                      <Card.Text>{meal.desc}</Card.Text>
+                    </Card.Body>
+          <ListGroup className="list-group-flush">
+            <ListGroup.Item>Made On: {meal.created}</ListGroup.Item>
+            <ListGroup.Item>Portions: {meal.portions}</ListGroup.Item>
+          </ListGroup>
+          <Card.Body>
+            <Card.Link href={`/food/${meal._id}`}>Details</Card.Link>
+          </Card.Body>
+                </Card>
+              </Col> 
+            </Row>
+          </Container>
        
         )
     })
@@ -131,33 +128,31 @@ return(
     <Test setImageURL = {setImageURL}/>
 <h4>Create A New Meal</h4>
 <Form onSubmit={handleSubmit}>
-<Form.Group>
-<Form.Label>Name:</Form.Label>
-<Form.Control type="text" required name = "name" placeholder="Enter meal's name" onChange={handleChange} value={newForm.name} />
-</Form.Group>
-<Form.Group>
-<Form.Label>Image:</Form.Label>
-<Form.Control  type="text" required name= "image" placeholder="Enter meal image"  onChange={handleChange} value={imageURL}/>
-</Form.Group>
-<Form.Group>
-<Form.Label>Description:</Form.Label>
-<Form.Control type="text" required name= "desc" placeholder="Enter meal description" onChange={handleChange} value={newForm.desc} />
-</Form.Group>
-<Form.Group>
-<Form.Label>Day:</Form.Label>
-<Form.Control type="text" required name= "day" placeholder="Enter day of the week" onChange={handleChange} value={newForm.day} />
-</Form.Group>
-<Form.Group>
-<Form.Label>Portions:</Form.Label>
-<Form.Control type="number" required name= "portions" placeholder="Enter meal portions" onChange={handleChange} value={newForm.portions} />
-</Form.Group>
-<Form.Group>
-<Form.Label>Made on:</Form.Label>
-<Form.Control type="date" required name= "created" placeholder="Enter prepared date" onChange={handleChange} value={newForm.created} />
-</Form.Group>
-<Button variant="primary" type="submit">
-Click here to submit form
-</Button>
+  <Form.Group>
+    <Form.Label>Name:</Form.Label>
+    <Form.Control type="text" required name = "name" placeholder="Enter meal's name" onChange={handleChange} value={newForm.name} />
+  </Form.Group>
+  <Form.Group>
+    <Form.Label>Image:</Form.Label>
+    <Form.Control  type="text" required name= "image" placeholder="Enter meal image"  onChange={handleChange} value={imageURL}/>
+  </Form.Group>
+  <Form.Group>
+    <Form.Label>Description:</Form.Label>
+    <Form.Control type="text" required name= "desc" placeholder="Enter meal description" onChange={handleChange} value={newForm.desc} />
+  </Form.Group>
+  <Form.Group>
+    <Form.Label>Day:</Form.Label>
+    <Form.Control type="text" required name= "day" placeholder="Enter day of the week" onChange={handleChange} value={newForm.day} />
+  </Form.Group>
+  <Form.Group>
+    <Form.Label>Portions:</Form.Label>
+    <Form.Control type="number" required name= "portions" placeholder="Enter meal portions" onChange={handleChange} value={newForm.portions} />
+  </Form.Group>
+  <Form.Group>
+    <Form.Label>Made on:</Form.Label>
+    <Form.Control type="date" required name= "created" placeholder="Enter prepared date" onChange={handleChange} value={newForm.created} />
+  </Form.Group>
+  <Button variant="primary" type="submit">Click here to submit form</Button>
 </Form>
 <section className ="meal-list">
         {meals && meals.length ? loaded() : loading()}
