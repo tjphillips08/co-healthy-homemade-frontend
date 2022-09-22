@@ -55,7 +55,7 @@ const handleSubmit =async (e) =>{
     e.preventDefault()
    
     try{
-        
+        console.log(newForm)
         const newMeal = {...newForm}
         const testingOutput = JSON.stringify(newMeal)
 
