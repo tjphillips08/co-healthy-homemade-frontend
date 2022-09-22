@@ -59,6 +59,7 @@ const handleSubmit =async (e) =>{
 
         const newMeal = {...newForm, image: imageURL}
         console.log(newMeal) 
+        console.log(imageURL)
        
 
         const testingOutput = JSON.stringify(newMeal)
