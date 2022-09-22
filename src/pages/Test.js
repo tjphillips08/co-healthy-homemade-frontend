@@ -32,7 +32,7 @@ const TestUpload = (props) =>{
     // console.log("Test", file)
     return(
         <div>
-            <h1>Testing form</h1>
+            <h1>Create A Meal</h1>
             <form onSubmit={handleSubmit} >
                 <FileUploader onFileSelect= {setFile}selectedFile ={file}/>
                 <input type="submit" value="upload"></input>
