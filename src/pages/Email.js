@@ -28,7 +28,7 @@ export const Email = () => {
       });
   };
 
-  
+  //
   return (
     <div classname = "container">
     <form ref={form} onSubmit={sendEmail}>
