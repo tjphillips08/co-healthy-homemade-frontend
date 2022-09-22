@@ -81,6 +81,29 @@
 
 
 
+## Technologies Use:
+### Express RESTful routing was used in tandem with MongoDB and Heroku to allows our client to store information.
+### REACT was used to establish pages, info and links. REACT components were used for the navbar and header to allow for modular use.
+### Bootstrap was used to build our forms, photo carousel, and style our site.
+### Knowledge of HTML, CSS, and JavaScript were key to implementing the aforementined technology.
+
+
+## Challenging Code:
+
+
+<img width="627" alt="REACT-Bootstrap" src="https://user-images.githubusercontent.com/100719674/191821272-ed4cf5ce-4dcb-46f7-8cdc-c60bd28b701d.png">
+### REACT-Bootstrap as a whole was tricky to implement. The number of imports in the above photo closely paralles the documentation read to make it work.
+
+
+
+![Cloudinary Import](https://user-images.githubusercontent.com/100719674/191821236-dc648774-91ac-49ed-828f-c1f9c5442d6f.png)
+### Implementing Cloudinary are tying the photo upload in to our form was a two day hurdle. We ran in to conflicts with Bootstrap and our database through this process.
+
+
+![File Uploader](https://user-images.githubusercontent.com/100719674/191821665-35ae54ee-a869-482c-8b6e-4e87800ff1f0.png)
+### The file uploader was a key feature for our client. Again, the documentation and our peers were key to attaining the functionality our team desired.
+
+
 
 ## API:
 ### https://cloudinary.com/
@@ -94,6 +117,11 @@
 
 ## Link:
 ### co-healthy-homemade.netlify.app
+
+## Stretch Goals:
+### User Authorization: We have the forms in place just didn't have the time. We intend on getting this implemented in the next day or two.
+### Client List: We have this built on the backend. Once User Auth. is in place, the Chef will be able to view a list of clients and assign meals to them specifically.
+### Mobile application via REACT Native
 
 ## The Developement Team:
 ### Project Lead/ Front-end Dev: Taylor Phillips 
