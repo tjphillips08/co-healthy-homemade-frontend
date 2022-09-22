@@ -122,7 +122,7 @@ The file uploader was a key feature for our client. Again, the documentation and
 ### https://miro.com/app/board/uXjVPXWQn0Y=/
 
 ## Link:
-### https://co-healthy-homemade.netlify.app/
+### https://co-healthy-homemade.netlify.app/home
 
 ## Stretch Goals:
 ### User Authorization: We have the forms in place just didn't have the time. We intend on getting this implemented in the next day or two.
