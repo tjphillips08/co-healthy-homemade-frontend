@@ -99,13 +99,13 @@ const loaded = () =>{
                       <Card.Title>{meal.name}</Card.Title>
                       <Card.Text>{meal.desc}</Card.Text>
                     </Card.Body>
-          <ListGroup className="list-group-flush">
-            <ListGroup.Item>Made On: {meal.created}</ListGroup.Item>
-            <ListGroup.Item>Portions: {meal.portions}</ListGroup.Item>
-          </ListGroup>
-          <Card.Body>
-            <Card.Link href={`/food/${meal._id}`}>Details</Card.Link>
-          </Card.Body>
+            <ListGroup className="list-group-flush">
+              <ListGroup.Item>Made On: {meal.created}</ListGroup.Item>
+              <ListGroup.Item>Portions: {meal.portions}</ListGroup.Item>
+            </ListGroup>
+            <Card.Body>
+              <Card.Link href={`/food/${meal._id}`}>Details</Card.Link>
+            </Card.Body>
                 </Card>
               </Col> 
             </Row>
