@@ -3,12 +3,17 @@ import emailjs from '@emailjs/browser';
 import { useState } from 'react';
 
 export const Email = () => {
+  const SERVICE_ID = process.env.REACT_APP_SERVICE_ID
+  const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID
+  const PubKey= process.env.REACT_APP_PUBLIC_KEY
   
-  const [newEmail,setnewEmail] = useState({
+  const [newEmail,setnewEmail] = useState('')
+  const initForm = {
     user_name: '',
     user_email: '',
     message: '',
-  })
+  }  
+  
 
   const handleChange = (evt) => {
     setnewEmail({...newEmail,[evt.target.name]: evt.target.value,})
@@ -20,8 +25,9 @@ export const Email = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_o97mq8g', 'template_hxyicfc', form.current, 'RNf5R4RpyK6m0mkbf')
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PubKey )
       .then((result) => {
+        setnewEmail(initForm)
           console.log(result.text);
       }, (error) => {
           console.log(error.text);
@@ -57,7 +63,7 @@ export const Email = () => {
       value={newEmail.message}
       onChange={handleChange}
       />
-      <input type="text" 
+      <input type="submit" 
       value="Send" 
       onChange={handleChange}
       />

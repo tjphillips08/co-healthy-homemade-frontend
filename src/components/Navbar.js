@@ -3,7 +3,6 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { SocialIcon } from 'react-social-icons';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -34,6 +33,7 @@ const Navigation = (props) => {
                 <NavDropdown.Item href="/register">Register</NavDropdown.Item>
                 <NavDropdown.Item href="/services">Services</NavDropdown.Item>
                 <NavDropdown.Item href="/food">Menu</NavDropdown.Item>
+                <NavDropdown.Item href="/email">Email</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="/contact">Contact</NavDropdown.Item>
               </NavDropdown>

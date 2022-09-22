@@ -16,7 +16,7 @@ import Test from '../pages/Test'
 
 
 
-const BASE_URL= 'https://co-healthy-homemade.herokuapp.com/'
+const BASE_URL= process.env.REACT_APP_BASE_URL
 
 const getMeals = async (fn) =>{
     try{
