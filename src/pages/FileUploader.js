@@ -5,8 +5,7 @@ const FileUploader = ({onFileSelect, selectedFile}) => {
     
 
     const handleFileInput = (e) => {
-        // handle validations
-        // onFileSelect(e.target.files[0])
+        
         console.log(e)
         onFileSelect(fileInput.current.files[0])
     }
