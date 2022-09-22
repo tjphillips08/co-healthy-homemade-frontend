@@ -31,6 +31,56 @@
 ### The client form will provide the weekly menu, reference photos, and a place. to leave feedback for the chef.
 
 
+## Application Photos:
+
+
+<img width="1592" alt="Home" src="https://user-images.githubusercontent.com/100719674/191814864-6933d730-1a61-4156-aaf0-15a834e855a5.png">
+### The home page greats the user with a carousel of images detailing the Chef's work. There are two icons for the Client or Chef to login
+
+
+
+
+
+<img width="1551" alt="Login" src="https://user-images.githubusercontent.com/100719674/191815335-88d60556-b4a5-43cb-98a5-c92e54e041fe.png">
+### The login form allows the Client or Chef to access the site using their credentials.
+
+
+
+
+
+<img width="1382" alt="Register" src="https://user-images.githubusercontent.com/100719674/191815521-284f5928-8675-4b36-b839-d8ff09d83736.png">
+### If the client has not yet registered, they are redirected to the registration page.
+
+
+
+
+
+<img width="1223" alt="About Us" src="https://user-images.githubusercontent.com/100719674/191815813-5d06203b-a8df-4cc4-a9a7-74b7328a4bc0.png">
+### The about us and services pages give the user information about the Chef and CO Healthy Homemade. Linking directly to the contact us page so they can correspond with the Chef directly.
+
+
+
+
+
+<img width="799" alt="Create a Meal" src="https://user-images.githubusercontent.com/100719674/191816384-13f0f8f8-70fb-46c8-9c22-7736f71bf069.png">
+### The Chef can use this form to upload a photo from their device and provide the client with meal details, reference photos, made on date, and number of portions.
+
+
+
+
+
+<img width="514" alt="Weekly" src="https://user-images.githubusercontent.com/100719674/191817018-0ecb0cb9-3984-427c-8290-a8b9b9dece0e.png">
+### When the meal is created, it is displayed below the form. This allows the Chef to review and edit any meal.
+
+
+
+
+
+<img width="946" alt="Meal Detail" src="https://user-images.githubusercontent.com/100719674/191817244-64c4a173-6efc-4001-97a0-26851136704f.png">
+### By clicking on the meal, the Chef can edit or delete the menu item. This form also allows the client to assign a day to each meal and plan out their week. Additionally, the contact ensures speedy communication between the Client and Chef. Providing a means to give feedback, request a change, or inform of dietary changes.
+
+
+
 
 ## API:
 ### https://cloudinary.com/
@@ -43,7 +93,7 @@
 ### https://miro.com/app/board/uXjVPXWQn0Y=/
 
 ## Link:
-### https://development--gleeful-sfogliatella-307a30.netlify.app/home
+### co-healthy-homemade.netlify.app
 
 ## The Developement Team:
 ### Project Lead/ Front-end Dev: Taylor Phillips 
