@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { useState } from 'react';
-import "./Email.css"
+import "../pages/email.css"
 
 
 export const Email = () => {

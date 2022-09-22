@@ -55,11 +55,10 @@ const handleSubmit =async (e) =>{
     e.preventDefault()
    
     try{
-        console.log(newForm)
+        
 
         const newMeal = {...newForm, image: imageURL}
-        console.log(newMeal) 
-        console.log(imageURL)
+        
        
 
         const testingOutput = JSON.stringify(newMeal)
@@ -73,10 +72,10 @@ const handleSubmit =async (e) =>{
         }
 
         const URL = BASE_URL+'food'
-        console.log(URL)
+        
         const response= await fetch(URL, options)
         const responseData = await response.json()
-        console.log(responseData)
+        
 
         getMeals(setMeals)
         setNewForm(initForm)
@@ -94,7 +93,7 @@ const handleChange = (e) =>{
 
 const loaded = () =>{
     return meals?.map((meal)=>{
-        // console.log(meal)
+        
         return(
           <Container id="meals">
             <Row  className="g-4 shadow-lg">
