@@ -1,6 +1,7 @@
 
 # codesRus - Visionary Productions - SEI-Project 3 - CO Healthy Homemade
 
+
 ## Product Description:
 
 ### Colorado Healthy Homemade is a personal chef service based out of Denver. Their service provides the client with a chef who goes to their home, prepares a menu, shops for the food, and prepares and portions the meals for the week. At the moment, the chef leaves a paper write-up of the weeks meals supplemented with photos delivered by text. The client has requested that we produce a product that allows the chef to view the client, provide the weekly menu via a calendar, and upload photos for reference. The client will be able to login and view the menu (or previous menus) by week, view the photos, and leave feedback (likes, dietary restrictions, allergies). Any correspondence between chef and client would trigger an email notification.
@@ -31,12 +32,45 @@
 
 
 ## API:
-json.googleapis.com
-https://developers.google.com/calendar/api/v3/reference?hl=en_US
+### https://cloudinary.com/
+### Cloudinary was implemented to give our client the ability to upload photos from their tablet, computer, or mobile device and attach it directly the form.
+### Email API
+### This was implemented to give the client and potential clients the ability to communicate directly with the Chef via the application.
 
 ## Component Hierarchy:
 
 ### https://miro.com/app/board/uXjVPXWQn0Y=/
+
+## Link:
+### https://development--gleeful-sfogliatella-307a30.netlify.app/home
+
+## The Developement Team:
+### Project Lead/ Front-end Dev: Taylor Phillips 
+### https://www.linkedin.com/in/taylorjphillips90/
+### Back-end Dev: Mackenzie Lamour 
+### https://www.linkedin.com/in/mackenzie-lamour/
+### Design Coordinator: John Paul Haddad 
+### https://www.linkedin.com/in/john-paul-haddad/
+
+## Shout-outs:
+## This application was a team effort. We would like to thank the following developers for their selflessness and contributions. We coouldn't have done it without you! 
+## David Robles 
+## https://www.linkedin.com/in/david-robles-dr/
+
+## Victoria Vela
+## https://www.linkedin.com/in/victoria-vela1/
+
+## Juan Venegas
+## https://www.linkedin.com/in/juan-venegas-600254163/
+
+## Tim "The Wizard" Rathert
+## https://www.linkedin.com/in/tim-rathert/
+
+## Eric "Plead the Fith" Fithian
+## https://www.linkedin.com/in/eric-fithian/
+
+## Joshua Smith
+## https://www.linkedin.com/in/jws-maker/
 
 
 
