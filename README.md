@@ -88,7 +88,7 @@ By clicking on the meal, the Chef can edit or delete the menu item. This form al
 
 
 ## Technologies Use:
-### Express RESTful routing was used in tandem with MongoDB and Heroku to allows our client to store information.
+### Express RESTful routing was used in tandem with MongoDB and Heroku to allows our client to store information and developers to establish routes.
 ### REACT was used to establish pages, info and links. REACT components were used for the navbar and header to allow for modular use.
 ### Bootstrap was used to build our forms, photo carousel, and style our site.
 ### Knowledge of HTML, CSS, and JavaScript were key to implementing the aforementined technology.
