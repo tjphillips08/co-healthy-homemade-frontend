@@ -30,7 +30,7 @@ const Login = () =>{
         <Button variant="primary" type="submit">
           Submit
         </Button>
-        <Link href="Base_URL+'register">Register</Link>
+        <Link href="/register">Register</Link>
       </Form>
     )
 }
