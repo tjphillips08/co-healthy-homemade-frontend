@@ -10,6 +10,7 @@ import About from "../pages/About"
 import Home from "../pages/Home"
 import Login from "../pages/Login"
 import Register from "../pages/Register"
+import { Email } from "../pages/Email"
 
 
 const Main = (props) => {
@@ -28,6 +29,7 @@ const Main = (props) => {
       <Route path='/home' element={<Home/>}></Route>
       <Route path='/login' element={<Login/>}></Route>
       <Route path='/register' element={<Register/>}></Route>
+      <Route path='/email' element={<Email/>}></Route>
 
     </Routes>
     </main>
