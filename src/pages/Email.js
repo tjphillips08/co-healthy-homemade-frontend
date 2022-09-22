@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { useState } from 'react';
-import "./Email.css"
+import "../pages/email.css"
 
 
 export const Email = () => {
@@ -53,8 +53,8 @@ export const Email = () => {
       value={newEmail.user_email}
       onChange={handleChange}
       />
-    <label htmlFor="country">Service Needed</label>
-        <select id="country" name="country">
+    <label htmlFor="options">Service Needed</label>
+        <select id="options" name="options">
             <option value="meal-prep">Custom In-Home Weekly Meal Prep</option>
             <option value="party-services">Event and Party Services</option>
             <option value="consultation">Consultation</option>
@@ -66,7 +66,7 @@ export const Email = () => {
       onChange={handleChange}
       />
       
-      <input type="submit" 
+      <input id = "submit-button" type="submit" 
       value="Send" 
       onChange={handleChange}
       />

@@ -28,3 +28,29 @@
 
 
 }
+
+label{
+    font-weight:200;
+    font-size: 22px;
+    font-style:oblique;
+    width: auto;
+    height: auto;
+    display: flex;;
+    justify-content: center;
+    align-items: center;
+}
+
+textarea{
+    font-size: 15px;
+    row-gap: 2em;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+input .submit-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
