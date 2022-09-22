@@ -1,6 +1,8 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { useState } from 'react';
+import "./Email.css"
+
 
 export const Email = () => {
   const SERVICE_ID = process.env.REACT_APP_SERVICE_ID
@@ -36,8 +38,8 @@ export const Email = () => {
 
   //
   return (
-    <div classname = "container">
-    <form ref={form} onSubmit={sendEmail}>
+    <div id="email_container">
+    <form id="email_form"ref={form} onSubmit={sendEmail}>
       <label>Name</label>
       <input 
       type="text" 
@@ -51,7 +53,7 @@ export const Email = () => {
       value={newEmail.user_email}
       onChange={handleChange}
       />
-    <label for="country">Service Needed</label>
+    <label htmlFor="country">Service Needed</label>
         <select id="country" name="country">
             <option value="meal-prep">Custom In-Home Weekly Meal Prep</option>
             <option value="party-services">Event and Party Services</option>
@@ -63,11 +65,15 @@ export const Email = () => {
       value={newEmail.message}
       onChange={handleChange}
       />
+      
       <input type="submit" 
       value="Send" 
       onChange={handleChange}
       />
     </form>
     </div>
+
+
   );
 };
+

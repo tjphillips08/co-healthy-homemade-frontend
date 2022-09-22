@@ -1,0 +1,30 @@
+ div #email_container{
+    display:flexbox;
+   
+    justify-content: center;
+    align-items: center;
+    
+  
+    /* margin: left auto;
+    margin-right: auto; */
+    /* margin-top: 20px; */
+   
+    box-shadow: 5px 5px 5px green;
+    /* padding-left: 300px; */
+    margin: 0 auto;
+    
+}
+
+#email_form{
+     width: 500px;
+    height: 500px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    box-shadow: 5px 5px 5px 5px green;
+    display: flexbox;
+    background-color: rgb(157, 155, 155);
+
+
+}
