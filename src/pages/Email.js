@@ -1,10 +1,8 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { useState } from 'react';
-import { Form } from 'react-router-dom';
-import { Button } from'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "./Email.css"
+
 
 export const Email = () => {
   const SERVICE_ID = process.env.REACT_APP_SERVICE_ID
@@ -40,8 +38,8 @@ export const Email = () => {
 
   //
   return (
-    <div className = "container">
-    <form ref={form} onSubmit={sendEmail}>
+    <div id="email_container">
+    <form id="email_form"ref={form} onSubmit={sendEmail}>
       <label>Name</label>
       <input 
       type="text" 
@@ -67,6 +65,7 @@ export const Email = () => {
       value={newEmail.message}
       onChange={handleChange}
       />
+      
       <input type="submit" 
       value="Send" 
       onChange={handleChange}
