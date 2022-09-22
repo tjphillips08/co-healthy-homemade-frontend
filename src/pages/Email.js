@@ -24,9 +24,9 @@ export const Email = () => {
       <input type="email" name="user_email" />
     <label for="country">Service Needed</label>
         <select id="country" name="country">
-            <option value="australia">Meal Order</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
+            <option value="meal-prep">Custom In-Home Weekly Meal Prep</option>
+            <option value="party-services">Event and Party Services</option>
+            <option value="consultation">Consultation</option>
     </select>
       <label>Message</label>
       <textarea name="message" />
