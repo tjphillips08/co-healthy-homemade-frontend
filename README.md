@@ -1,6 +1,7 @@
 
 # codesRus - Visionary Productions - SEI-Project 3 - CO Healthy Homemade
 
+![Logo](https://user-images.githubusercontent.com/100719674/191805176-1912b5e6-df8c-4c77-b881-fc931ebbc69e.PNG)
 
 ## Product Description:
 
