@@ -57,7 +57,7 @@ export const Email = () => {
       value={newEmail.message}
       onChange={handleChange}
       />
-      <input type="text" 
+      <input type="submit" 
       value="Send" 
       onChange={handleChange}
       />
