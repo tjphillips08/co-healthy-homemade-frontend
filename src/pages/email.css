@@ -30,7 +30,7 @@
 }
 
 label{
-    font-weight: bold;
+    font-weight:200;
     font-size: 22px;
     font-style:oblique;
     width: auto;
@@ -49,7 +49,7 @@ textarea{
     
 }
 
-.submit-button{
+input .submit-button{
     display: flex;
     justify-content: center;
     align-items: center;
