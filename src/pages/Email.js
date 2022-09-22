@@ -50,10 +50,15 @@ export const Email = () => {
             <option value="consultation">Consultation</option>
     </select>
       <label>Message</label>
-      <textarea name="message" 
+      <textarea name="message"
+      type="text"
+      value={newEmail.message}
+      onChange={handleChange}
       />
       <input type="text" 
-      value="Send" />
+      value="Send" 
+      onChange={handleChange}
+      />
     </form>
     </div>
   );
