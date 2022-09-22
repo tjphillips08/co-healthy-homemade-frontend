@@ -4,11 +4,13 @@ import { useState } from 'react';
 
 export const Email = () => {
   
-  const [newEmail,setnewEmail] = useState({
+  const [newEmail,setnewEmail] = useState('')
+  const initForm = {
     user_name: '',
     user_email: '',
     message: '',
-  })
+  }  
+  
 
   const handleChange = (evt) => {
     setnewEmail({...newEmail,[evt.target.name]: evt.target.value,})
@@ -22,6 +24,7 @@ export const Email = () => {
 
     emailjs.sendForm('service_o97mq8g', 'template_hxyicfc', form.current, 'RNf5R4RpyK6m0mkbf')
       .then((result) => {
+        setnewEmail(initForm)
           console.log(result.text);
       }, (error) => {
           console.log(error.text);
