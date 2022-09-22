@@ -1,13 +1,12 @@
 import {React} from 'react'
-import {  useNavigate } from 'react-router-dom'
+
 import './Pages.css'
 
 
-const BASE_URL = 'https://co-healthy-homemade.herokuapp.com/'
+
 
 const Services = () =>{
-    const navigate = useNavigate()
-    const URL = BASE_URL+'services'
+    
     
     return(
     <div id="services">
