@@ -134,7 +134,7 @@ The file uploader was a key feature for our client. Again, the documentation and
 ### https://www.linkedin.com/in/taylorjphillips90/
 ### Back-end Dev: Mackenzie Lamour 
 ### https://www.linkedin.com/in/mackenzie-lamour/
-### Design Coordinator: John Paul Haddad 
+### Product Manager & Design Coordinator: John Paul Haddad 
 ### https://www.linkedin.com/in/john-paul-haddad/
 
 ## Shout-outs:
